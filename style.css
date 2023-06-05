@@ -6,3 +6,7 @@ body {
     font-family: 'Nunito';
     text-align: center;
 }
+
+div {
+    margin: 0px 11em;
+}

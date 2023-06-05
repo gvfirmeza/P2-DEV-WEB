@@ -21,4 +21,16 @@ jogadores.forEach((ele) => {
     ele_masc.appendChild(imagem);
   }
 
+  // Criando elemento do nome
+
+  const nome = document.createElement("p");
+  nome.textContent = ele.nome;
+
+  // Inserindo o nome do jogador abaixo das imagens
+
+  if (ele.elenco === "feminino") {
+    ele_fem.appendChild(nome);
+  } else if (jogador.elenco === "masculino") {
+    ele_masc.appendChild(nome);
+  }
 });
