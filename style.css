@@ -4,9 +4,10 @@ body {
     background-color: black;
     color: white;
     font-family: 'Nunito';
-    font-weight: bolder;
+    font-weight: 900;
     width: 1200px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
 h1 , h2 {
@@ -34,18 +35,38 @@ a {
   color: white;
 }
 
+#ancora:hover {
+color: rgb(209, 209, 209);
+}
+
+.jogador-div:hover{
+  transform: scale(1.05); 
+  transition: transform 0.2s ease-in-out; 
+}
+
 #detalhes {
   margin: 0 auto;
   width: 50%;
 }
 
+#nome {
+  font-size: 18px;
+  margin: 0;
+}
+
 #imagem {
   float: left;
   margin-right: 3em;
+  width: 290px;
 }
 
 @media (max-width: 1200px) {
   
+  #detalhes {
+    margin: 0 auto;
+    width: 60%;
+  }
+
   body {
     width: fit-content;
   }
@@ -53,6 +74,11 @@ a {
 }
 
 @media (max-width: 1042px) {
+
+  #detalhes {
+    margin: 0 auto;
+    width: 77%;
+  }
 
   body {
     width: fit-content;
@@ -68,12 +94,66 @@ a {
 @media (max-width: 768px) {
 
   body {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  a {
+    font-size: 34px;
+  }
+
+  .jogador-div {
+    flex-direction: column; /* Altera o fluxo dos elementos para vertical */
+  }
+
+  #nome {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  #detalhes {
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    order: 1; /* Altera a ordem do elemento */
+  }
+
+  #imagem {
+    float: none; /* Remove o alinhamento float */
+    margin-right: 0;
+    width: 80%; /* Ajusta a largura da imagem */
+    order: 2; /* Altera a ordem do elemento */
+  }
+
+  body {
     width: fit-content;
   }
 
   #div-masculina,
   #div-feminina {
     grid: auto / 50% 50%;
+  }
+
+}
+
+@media (max-width: 520px) {
+  
+  body {
+    font-size: 14px;
+  }
+
+  #imagem {
+    width: 100%;
+  }
+
+  #nome {
+    font-size: 19px;
+  }
+
+  #detalhes {
+    text-align: center;
+    font-size: 16px;
   }
 
 }
