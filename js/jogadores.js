@@ -49,13 +49,13 @@ function manipularEvento(event) {
   const posicao = jogadorDiv.dataset.posicao;
   const imagem = jogadorDiv.dataset.imagem;
   
-  sessionStorage.setItem('nome', nome);
-  sessionStorage.setItem('posicao', posicao);
-  sessionStorage.setItem('nascimento', nascimento);
-  sessionStorage.setItem('altura', altura);
-  sessionStorage.setItem('nome_completo', nome_completo);
-  sessionStorage.setItem('descricao', descricao);
-  sessionStorage.setItem('imagem', imagem);
+  localStorage.setItem('nome', nome);
+  localStorage.setItem('posicao', posicao);
+  localStorage.setItem('nascimento', nascimento);
+  localStorage.setItem('altura', altura);
+  localStorage.setItem('nome_completo', nome_completo);
+  localStorage.setItem('descricao', descricao);
+  localStorage.setItem('imagem', imagem);
   
   window.location.href = 'detalhes.html';
 }
