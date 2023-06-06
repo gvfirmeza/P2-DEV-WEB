@@ -5,17 +5,20 @@ body {
     color: white;
     font-family: 'Nunito';
     font-weight: bolder;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-h1,h2 {
-  text-align: center;
+h1 , h2 {
+  text-align: center; 
 }
 
 #div-masculina,
 #div-feminina {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
+  grid: auto / 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+  margin: 0 auto;
 }
 
 .jogador-div {
@@ -31,8 +34,6 @@ a {
   color: white;
 }
 
-
-
 #detalhes {
   margin: 0 auto;
   width: 50%;
@@ -43,3 +44,36 @@ a {
   margin-right: 3em;
 }
 
+@media (max-width: 1200px) {
+  
+  body {
+    width: fit-content;
+  }
+  
+}
+
+@media (max-width: 1042px) {
+
+  body {
+    width: fit-content;
+  }
+
+  #div-masculina,
+  #div-feminina {
+    grid: auto / 25% 25% 25% 25%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  body {
+    width: fit-content;
+  }
+
+  #div-masculina,
+  #div-feminina {
+    grid: auto / 50% 50%;
+  }
+
+}

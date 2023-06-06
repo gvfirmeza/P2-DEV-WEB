@@ -4,21 +4,15 @@ const ele_fem = document.getElementById("div-feminina");
 
 jogadores.forEach((ele) => {
 
-  // Criando elemento de imagem
   const imagem = document.createElement("img");
 
-  // Definindo o src da imagem com a url do jogador
   imagem.src = ele.imagem;
 
-  // Criando elemento do nome
   const nome = document.createElement("p");
   nome.textContent = ele.nome;
 
-  // Criando uma div para conter a imagem e o nome
   const jogadorDiv = document.createElement("div");
   jogadorDiv.className = "jogador-div";
-  
-  // Armazenando os valores desejados como atributos personalizados
 
   jogadorDiv.setAttribute("data-nome", ele.nome);
   jogadorDiv.setAttribute("data-nome_completo", ele.nome_completo);
@@ -30,7 +24,6 @@ jogadores.forEach((ele) => {
   jogadorDiv.appendChild(imagem);
   jogadorDiv.appendChild(nome);
 
-  // Separando jogadores nas respectivas divs e inserindo o cartão dos jogadores
   if (ele.elenco === "feminino") {
     ele_fem.appendChild(jogadorDiv);
   } else if (ele.elenco === "masculino") {
