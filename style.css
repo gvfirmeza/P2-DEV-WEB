@@ -4,9 +4,42 @@ body {
     background-color: black;
     color: white;
     font-family: 'Nunito';
-    text-align: center;
+    font-weight: bolder;
 }
 
-div {
-    margin: 0px 11em;
+h1,h2 {
+  text-align: center;
 }
+
+#div-masculina,
+#div-feminina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.jogador-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.4em;
+  text-align: center;
+}
+
+a {
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#detalhes {
+  margin: 0 auto;
+  width: 50%;
+}
+
+#imagem {
+  float: left;
+  margin-right: 3em;
+}
+
