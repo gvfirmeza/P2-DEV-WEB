@@ -103,7 +103,7 @@ color: rgb(209, 209, 209);
   }
 
   .jogador-div {
-    flex-direction: column; /* Altera o fluxo dos elementos para vertical */
+    flex-direction: column; 
   }
 
   #nome {
@@ -116,14 +116,14 @@ color: rgb(209, 209, 209);
     text-align: center;
     margin: 0 auto;
     width: 60%;
-    order: 1; /* Altera a ordem do elemento */
+    order: 1; 
   }
 
   #imagem {
-    float: none; /* Remove o alinhamento float */
+    float: none; 
     margin-right: 0;
-    width: 80%; /* Ajusta a largura da imagem */
-    order: 2; /* Altera a ordem do elemento */
+    width: 80%; 
+    order: 2; 
   }
 
   body {
